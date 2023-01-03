@@ -1,1 +1,61 @@
-<!-- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root">
+        
+        <!-- React will override the DOM element -->
+
+        
+        <!-- All the below statement will not render and only the statement with on line 44 will render  -->
+
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1
+
+
+    </div>
+    
+</body>
+<!-- DOM manuplation way of doing things -->
+<script>
+    const ele1 = document.createElement('h1');
+    ele1.innerHTML ="hello from DOM"
+    const r = document.getElementById('root').append(ele1);
+</script>
+
+
+<!-- React way of doing things -->
+<!-- Here the order of this matters  -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+
+    const ele2 = React.createElement('h1', {
+        
+        id:"myId",
+        className:"myClassName",
+        style: {color: "red", backgroundColor: "blue"}
+
+    }, 
+
+    'Hello from REACT'
+    
+    );
+
+    const root =ReactDOM.createRoot(document.getElementById('root'))
+    root.render(ele2);
+
+</script>
+
+</html>
