@@ -22,11 +22,9 @@ Inc uptime , speed , secuity from d-doc attack and reduces the time
  What is difference between react.development.js and react.production.js files via CDN
  react production is minified in nature hence very fast and effivcient as compared to the devlopment one
 
-
-
-
-
-  What is async and defer?
+What is async and defer?
   async : This refers to fetching(dowloading) the script encountered while prasing
   defer : This refers to executing the fetched script 
   https://www.youtube.com/watch?v=IrHmpdORLu8&t=246s&ab_channel=AkshaySaini
+
+  
