@@ -1,0 +1,60 @@
+Bundlers : vite , parcel , webpacks
+
+A bundler do the folowing things :
+
+* HMR : Hot Module Reloading , means auto reload on any change
+
+* File Watcher Algorithm(c++) : This keep a check on the file for any change
+
+* Parser minifies the code
+
+* Bundles things up
+
+* Cleaning our code
+
+* Super fast build Algorithm
+
+* Image optimization
+
+* Caching while devlopment
+
+* Compatable with the older version of browser
+
+* Zero config Bundler 
+
+* transitive dependies
+
+* 
+
+
+
+npm init :means  npm initialize and genrate a package.json
+npm init -y :means  npm initialize without any question asked
+
+npm is a package manager for the core and the helper packages.
+
+npm install -D parcel : This is a dev depencie
+npm i -D parcel : This is a dev depencie
+npm install --save-dev parcel : This is also a dev depencie
+
+caret ans tilde (^): auto-upgrade
+
+npm install react
+npm i react
+npm i react-dom
+
+npx parcel index.html : here x means execute parcel with the entery file as index.html , and build an devlopment build to host it on the server
+
+///////////////////////////////
+
+
+
+////////////////////////////////
+
+.parcel-cache means space reserved by parcel for its use
+
+npx parcel build index.html : means build an production build to host it on the server
+
+Anything which we could re-genrate is been put on git-ignore
+
+

@@ -26,35 +26,59 @@
     </div>
     
 </body>
+
 <!-- DOM manuplation way of doing things -->
 <script>
-    const ele1 = document.createElement('h1');
-    ele1.innerHTML ="hello from DOM"
-    const r = document.getElementById('root').append(ele1);
+    const ele = document.createElement('h1');
+    ele.innerHTML ="hello from DOM1";
+    const r = document.getElementById('root').append(ele);
 </script>
 
 
 <!-- React way of doing things -->
 <!-- Here the order of this matters  -->
+
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 <script>
 
-    const ele2 = React.createElement('h1', {
+const ele1 = React.createElement('h1', {
         
-        id:"myId",
-        className:"myClassName",
+        id:"myId1",
+        className:"myClassName1",
         style: {color: "red", backgroundColor: "blue"}
 
     }, 
 
-    'Hello from REACT'
+    'Hello from REACT1'
+    
+    );
+
+const ele2 = React.createElement('h1', {
+        
+        id:"myId2",
+        className:"myClassName2",
+        style: {color: "red", backgroundColor: "blue"}
+
+    }, 
+
+    'Hello from REACT2'
+    
+    );
+
+
+const ele3 = React.createElement('div', {     
+        id:"container",
+    }, 
+
+    [ele1 , ele2]
     
     );
 
     const root =ReactDOM.createRoot(document.getElementById('root'))
-    root.render(ele2);
+    // root.render(ele2);
+    root.render(ele3);
 
 </script>
 
