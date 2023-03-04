@@ -2,7 +2,7 @@ Bundlers : vite , parcel , webpacks
 
 A bundler do the folowing things :
 
-* HMR : Hot Module Reloading , means auto reload on any change
+* HMR : Hot Module Replacement , means auto reload on any change
 
 * File Watcher Algorithm(c++) : This keep a check on the file for any change
 
@@ -18,32 +18,42 @@ A bundler do the folowing things :
 
 * Caching while devlopment
 
-* Compatable with the older version of browser
+* Compatable with the older version of browser(BrowserList)
 
 * Zero config Bundler 
 
 * transitive dependies
 
-* 
+* Compression
 
-
+* Tree shaking
 
 npm init :means  npm initialize and genrate a package.json
-npm init -y :means  npm initialize without any question asked
+npm init -y :means  npm initialize without any question asked and genrate a package.json
 
 npm is a package manager for the core and the helper packages.
+
+package-lock.json keeps a exact track of the current package version while the package.json keeps only the mention version of the package with tilda
+
+Never put package-lock.json into git-ignore or else you will go into the error og it is working in my system but not on the production ,
+maintain the hash as well 
+
 
 npm install -D parcel : This is a dev depencie
 npm i -D parcel : This is a dev depencie
 npm install --save-dev parcel : This is also a dev depencie
 
-caret ans tilde (^): auto-upgrade
+caret(Used for minor version's) : (^) , tilde(Used for major version's) : (~) ===== auto-upgrade 
 
 npm install react
 npm i react
 npm i react-dom
 
 npx parcel index.html : here x means execute parcel with the entery file as index.html , and build an devlopment build to host it on the server
+
+npx parcel build index.html : means build an production build to host it on the server
+
+npx parcel index.html --https : for https server
 
 ///////////////////////////////
 
@@ -53,8 +63,10 @@ npx parcel index.html : here x means execute parcel with the entery file as inde
 
 .parcel-cache means space reserved by parcel for its use
 
-npx parcel build index.html : means build an production build to host it on the server
+
 
 Anything which we could re-genrate is been put on git-ignore
+
+browserlist ensure that our app works on the respective version as mentioned
 
 

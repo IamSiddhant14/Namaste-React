@@ -1,0 +1,19 @@
+{
+  "name": "l-2",
+  "version": "1.0.0",
+  "description": "Trail",
+  "scripts": {
+    "test": "jest",
+    "start":"parcel index.html"
+  },
+  "author": "Siddhant Sharma",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

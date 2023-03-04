@@ -1,0 +1,3 @@
+* git init to initalize a git repository
+
+*JSX should not be implemented directly by browsers, but instead requires a compiler to transform it into ECMAScript. This is where Babel comes in.
