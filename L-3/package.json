@@ -4,11 +4,14 @@
   "description": "Trail",
   "scripts": {
     "test": "jest",
-    "start":"parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Siddhant Sharma",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.8.2",
     "process": "^0.11.10"
   },

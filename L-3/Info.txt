@@ -1,3 +1,33 @@
 * git init to initalize a git repository
 
-*JSX should not be implemented directly by browsers, but instead requires a compiler to transform it into ECMAScript. This is where Babel comes in.
+* JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
+
+* JSX should not be implemented directly by browsers, but instead requires a compiler to transform it into ECMAScript. This is where Babel comes in.
+
+* To make starting of the application easy using react bundler we have added start : "parcel index.html" in package.json under its scrpts key also now in the terminal we write "npm run start" which earlier use to be "npx parcel index.html"
+
+* npx == npm run
+
+* shortcut : npm run start == npm start
+
+* To remove console.log addtional plugin will be needed like  : babel-plugin-transform-remove-console
+
+* We also need to configure this which could be find in the npm page only how to do this ,
+ That is make a file using .babelrc and then copy as it is on NPM website
+
+* Each element should always have a key in it
+
+* React use the help of  diffe algorithm to keep a track of the Keys
+
+* JSX is the replacemnt of react.createElement
+
+* There is also a package.json present in node module
+
+* There are two type of component in javascript : clas based and function based component
+
+* Every Componet name starts with a capital letter
+
+* JSX always santizes our application from potencial threats
+
+* Babel convert JSX to react.createElement then react convert it to html to load it on the Dom
+

@@ -26,7 +26,7 @@ A bundler do the folowing things :
 
 * Compression
 
-* Tree shaking
+* Tree shaking( Removes the deadcode From the App)
 
 npm init :means  npm initialize and genrate a package.json
 npm init -y :means  npm initialize without any question asked and genrate a package.json
@@ -68,5 +68,4 @@ npx parcel index.html --https : for https server
 Anything which we could re-genrate is been put on git-ignore
 
 browserlist ensure that our app works on the respective version as mentioned
-
 
